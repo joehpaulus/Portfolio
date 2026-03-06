@@ -45,6 +45,15 @@ If your account supports [Blueprints](https://render.com/docs/blueprint-spec), y
 2. In Render: **New** → **Blueprint** → connect the repo.
 3. Render reads `render.yaml` and creates a static site with the build command and publish path already set.
 
+## Deploy to GitHub Pages (free)
+
+1. Push this repo to GitHub (the workflow is already in `.github/workflows/deploy-pages.yml`).
+2. In your repo on GitHub: **Settings** → **Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Push to `main` (or run the workflow manually). The site will be at `https://<username>.github.io/Portfolio/`.
+
+If you rename the repo, update the `base` in `vite.config.js` (e.g. `'/NewRepoName/'` when building for GitHub Pages).
+
 ## What to edit
 
 | File | Purpose |
