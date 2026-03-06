@@ -1,0 +1,8 @@
+# Render Blueprint: deploy as a free Static Site
+# https://docs.render.com/blueprint-spec
+services:
+  - type: web
+    name: portfolio
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
