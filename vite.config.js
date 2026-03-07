@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: '.',
-  base: process.env.GITHUB_PAGES === 'true' ? '/Portfolio/' : '/',
+  base: '/',
   publicDir: 'public',
   build: {
     outDir: 'dist',
@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         work: 'work.html',
+        resume: 'resume.html',
         about: 'about.html',
         contact: 'contact.html',
       },
