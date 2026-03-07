@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         work: 'work.html',
+        resume: 'resume.html',
         about: 'about.html',
         contact: 'contact.html',
       },
